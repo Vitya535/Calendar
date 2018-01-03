@@ -51,19 +51,10 @@
     <Compile Include="FormForCalendar.Designer.cs">
       <DependentUpon>FormForCalendar.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyCalendarControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MyCalendarControl.Designer.cs">
-      <DependentUpon>MyCalendarControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormForCalendar.resx">
       <DependentUpon>FormForCalendar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MyCalendarControl.resx">
-      <DependentUpon>MyCalendarControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +77,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BLCalendar\BLCalendar.csproj">
+      <Project>{bc07aedd-1b73-4881-8910-848dc09fc2f9}</Project>
+      <Name>BLCalendar</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

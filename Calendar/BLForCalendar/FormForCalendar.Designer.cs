@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.myCalendarControl1 = new BLForCalendar.MyCalendarControl();
+            this.myCalendarControl1 = new BLCalendar.MyCalendarControl();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -42,7 +42,6 @@
             // myCalendarControl1
             // 
             this.myCalendarControl1.AnnuallyBoldedDates = new System.DateTime[0];
-            this.myCalendarControl1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.myCalendarControl1.BoldedDates = new System.DateTime[0];
             this.myCalendarControl1.CalendarDimensions = new System.Drawing.Size(1, 1);
             this.myCalendarControl1.FirstDayOfWeek = System.Windows.Forms.Day.Default;
@@ -53,10 +52,11 @@
             this.myCalendarControl1.MonthlyBoldedDates = new System.DateTime[0];
             this.myCalendarControl1.Name = "myCalendarControl1";
             this.myCalendarControl1.ScrollChange = 0;
+            this.myCalendarControl1.SelectionRange = new System.Windows.Forms.SelectionRange(new System.DateTime(2018, 1, 3, 0, 0, 0, 0), new System.DateTime(2018, 1, 3, 0, 0, 0, 0));
             this.myCalendarControl1.ShowToday = true;
             this.myCalendarControl1.ShowTodayCircle = true;
             this.myCalendarControl1.ShowWeekNumbers = false;
-            this.myCalendarControl1.Size = new System.Drawing.Size(164, 162);
+            this.myCalendarControl1.Size = new System.Drawing.Size(150, 150);
             this.myCalendarControl1.TabIndex = 1;
             this.myCalendarControl1.TitleBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.myCalendarControl1.TitleForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -79,7 +79,7 @@
         #endregion
 
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private MyCalendarControl myCalendarControl1;
+        private BLCalendar.MyCalendarControl myCalendarControl1;
     }
 }
 

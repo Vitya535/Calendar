@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("BLForCalendar")]
+[assembly: AssemblyTitle("BLCalendar")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BLForCalendar")]
+[assembly: AssemblyProduct("BLCalendar")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("b4da9a6e-61d0-4643-8b51-eba49228e9f6")]
+[assembly: Guid("bc07aedd-1b73-4881-8910-848dc09fc2f9")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //

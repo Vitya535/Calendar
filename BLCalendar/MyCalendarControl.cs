@@ -7,22 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
 
-//Практические задания
-//При разработке любого элемента управления из списка ниже, кроме собственно разработки, необходимо с помощью атрибутов задать:
-//●	описания свойств и событий;
-//●	разделы в инспекторе свойств, в которых свойства и события помещаются;
-//●	значения по умолчанию для свойств;
-//●	свойство и событие по умолчанию;
-//●	свойства, доступные для привязки;
-//●	неотображаемые в инспекторе свойств свойства и события(если существует такая потребность);
-//●	конвертеры и редакторы для свойств(если существует такая потребность).
-
-//14.	Разработать элемент управления “Календарь” (специализированный, наследник от базового класса Control), 
-//т.е.полностью новую реализацию данного элемента управления.
-
-namespace BLForCalendar
+namespace BLCalendar
 {
     public partial class MyCalendarControl : UserControl
     {
@@ -47,7 +33,7 @@ namespace BLForCalendar
         private DateTime minDate = DateTime.MinValue.Date;
         private int maxSelectionCount = 7;
         private int scrollChange = 0;
-        private SelectionRange selectionRange = 
+        private SelectionRange selectionRange = new SelectionRange(DateTime.Now.Date, DateTime.Now.Date);
 
         [Bindable(true), Category("Appearance"), DefaultValue("GrayText")]
         public Color TrailingForeColor { get { return trailingForeColor; } set { trailingForeColor = value; } }
@@ -96,5 +82,8 @@ namespace BLForCalendar
 
         [Bindable(true), Category("Appearance"), DefaultValue("0")]
         public int ScrollChange { get { return scrollChange; } set { scrollChange = value; } }
+
+        [Bindable(true), Category("Appearance"), DefaultValue("Now")]
+        public SelectionRange SelectionRange { get { return selectionRange; } set { selectionRange = value; } }
     }
 }
