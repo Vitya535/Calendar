@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,8 +10,11 @@ using System.Windows.Forms;
 
 namespace BLForCalendar
 {
-    public class MyCalendarControl : Control
+    public partial class MyCalendarControl : UserControl
     {
-
+        public MyCalendarControl()
+        {
+            InitializeComponent();
+        }
     }
 }

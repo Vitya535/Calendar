@@ -28,12 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.myCalendarControl1 = new BLForCalendar.MyCalendarControl();
+            this.SuspendLayout();
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(18, 18);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 0;
+            // 
+            // myCalendarControl1
+            // 
+            this.myCalendarControl1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.myCalendarControl1.Location = new System.Drawing.Point(194, 18);
+            this.myCalendarControl1.Name = "myCalendarControl1";
+            this.myCalendarControl1.ShowWeekNumbers = false;
+            this.myCalendarControl1.Size = new System.Drawing.Size(164, 162);
+            this.myCalendarControl1.TabIndex = 1;
+            this.myCalendarControl1.TitleBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.myCalendarControl1.TitleForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.myCalendarControl1.TodayDate = new System.DateTime(2018, 1, 3, 0, 0, 0, 0);
+            this.myCalendarControl1.TrailingForeColor = System.Drawing.SystemColors.GrayText;
+            // 
+            // FormForCalendar
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(409, 261);
+            this.Controls.Add(this.myCalendarControl1);
+            this.Controls.Add(this.monthCalendar1);
+            this.Name = "FormForCalendar";
+            this.Text = "Календарь";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private MyCalendarControl myCalendarControl1;
     }
 }
 
