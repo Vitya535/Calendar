@@ -34,15 +34,27 @@
             // 
             // monthCalendar1
             // 
+            this.monthCalendar1.BackColor = System.Drawing.SystemColors.Window;
             this.monthCalendar1.Location = new System.Drawing.Point(18, 18);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             // 
             // myCalendarControl1
             // 
+            this.myCalendarControl1.AnnuallyBoldedDates = new System.DateTime[0];
             this.myCalendarControl1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.myCalendarControl1.BoldedDates = new System.DateTime[0];
+            this.myCalendarControl1.CalendarDimensions = new System.Drawing.Size(1, 1);
+            this.myCalendarControl1.FirstDayOfWeek = System.Windows.Forms.Day.Default;
             this.myCalendarControl1.Location = new System.Drawing.Point(194, 18);
+            this.myCalendarControl1.MaxDate = new System.DateTime(9999, 12, 31, 0, 0, 0, 0);
+            this.myCalendarControl1.MaxSelectionCount = 7;
+            this.myCalendarControl1.MinDate = new System.DateTime(((long)(0)));
+            this.myCalendarControl1.MonthlyBoldedDates = new System.DateTime[0];
             this.myCalendarControl1.Name = "myCalendarControl1";
+            this.myCalendarControl1.ScrollChange = 0;
+            this.myCalendarControl1.ShowToday = true;
+            this.myCalendarControl1.ShowTodayCircle = true;
             this.myCalendarControl1.ShowWeekNumbers = false;
             this.myCalendarControl1.Size = new System.Drawing.Size(164, 162);
             this.myCalendarControl1.TabIndex = 1;
